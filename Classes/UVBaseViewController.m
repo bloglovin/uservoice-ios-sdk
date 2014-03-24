@@ -46,6 +46,11 @@
     }
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],  NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+}
+
 - (CGRect)contentFrame {
     CGRect barFrame = CGRectZero;
     barFrame = self.navigationController.navigationBar.frame;
